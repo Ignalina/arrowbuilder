@@ -1,7 +1,5 @@
 #FROM registry.access.redhat.com/ubi7/go-toolset
 FROM registry.access.redhat.com/ubi7/ubi-minimal
-#RUN microdnf install wget bash
-#RUN yum update && yum install -y wget tar gzip
 RUN microdnf install wget tar gzip
 RUN wget https://go.dev/dl/go1.18.2.linux-amd64.tar.gz
 RUN sha256sum go1.18.2.linux-amd64.tar.gz
