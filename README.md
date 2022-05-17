@@ -1,2 +1,3 @@
 # arrowbuilder
-Contains arrow dependencies for airgaped (closed infrastructure) build
+Contains Arrow + S3 + other dependencies for airgaped (closed infrastructure) build 
+
