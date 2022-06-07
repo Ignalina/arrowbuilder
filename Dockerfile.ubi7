@@ -8,3 +8,4 @@ RUN rm -rf go1.18.2.linux-amd64.tar.gz
 ADD arrowbuilder .
 WORKDIR /arrowbuilder
 RUN /usr/local/go/bin/go mod tidy
+RUN /usr/local/go/bin/go mod download
