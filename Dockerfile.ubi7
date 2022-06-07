@@ -7,9 +7,10 @@ RUN tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 RUN rm -rf go1.18.2.linux-amd64.tar.gz
 ADD arrowbuilder arrowbuilder
 WORKDIR /arrowbuilder
-RUN /usr/local/go/bin/go get github.com/minio/minio-go/v7
-RUN /usr/local/go/bin/go get github.com/minio/minio-go/v7/pkg/credentials
 RUN /usr/local/go/bin/go mod tidy
 RUN /usr/local/go/bin/go mod download
+RUN /usr/local/go/bin/go get github.com/minio/minio-go/v7
+RUN /usr/local/go/bin/go get github.com/minio/minio-go/v7/pkg/credentials
+RUN /usr/local/go/bin/go get -u
 RUN ls -R /arrowbuilder
 
