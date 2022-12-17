@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi7/ubi-minimal
 RUN microdnf install wget tar gzip
-RUN wget https://go.dev/dl/go1.19.linux-amd64.tar.gz && sha256sum go1.19.linux-amd64.tar.gz && tar -C /usr/local -xzf go*.linux-amd64.tar.gz && rm -rf go1.19.linux-amd64.tar.gz
+RUN wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz && sha256sum go1.19.4.linux-amd64.tar.gz && tar -C /usr/local -xzf go*.linux-amd64.tar.gz && rm -rf go1.19.4.linux-amd64.tar.gz
 
 #RUN /usr/local/go/bin/go mod tidy
 
